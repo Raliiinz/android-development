@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">AndroidDevelopment</string>
+    <string name="click_me">Click me</string>
+    <string name="enter_the_text">Enter the text:</string>
+    <string name="second_screen">You are on the second screen</string>
+    <string name="third_screen">You are on the third screen</string>
+</resources>
