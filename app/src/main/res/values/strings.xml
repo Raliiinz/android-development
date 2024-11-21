@@ -4,4 +4,12 @@
     <string name="enter_the_text">Enter the text:</string>
     <string name="second_screen">You are on the second screen</string>
     <string name="third_screen">You are on the third screen</string>
+    <string name="first_type_rv">Список</string>
+    <string name="second_type_rv">Сетка</string>
+    <string name="enter_the_number">Enter the number:</string>
+    <string name="add_it_randomly">Добавить несколько</string>
+    <string name="delete_by_accident">Удалить несколько</string>
+    <string name="add_to_a_random_position">Добавить одну</string>
+    <string name="delete_from_a_random_position">Удалить одну</string>
+    <string name="another">Другое</string>
 </resources>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/et_bottom_sheet"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="32dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/et_text_input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:hint="@string/enter_the_number" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+
+    <Button
+        android:id="@+id/btnAddRandom"
+        android:layout_width="180dp"
+        android:layout_height="64dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="16dp"
+        android:textSize="12sp"
+        android:text="@string/add_it_randomly"
+        app:layout_constraintBottom_toTopOf="@id/btnAddToRandomPosition"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/et_bottom_sheet"
+        app:layout_constraintEnd_toStartOf="@id/btnRemoveRandom"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/btnRemoveRandom"
+        android:layout_width="180dp"
+        android:layout_height="64dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="16dp"
+        android:textSize="12sp"
+        android:text="@string/delete_by_accident"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/btnAddRandom"
+        app:layout_constraintBottom_toTopOf="@id/btnRemoveFromRandomPosition"
+        app:layout_constraintTop_toBottomOf="@id/et_bottom_sheet" />
+
+    <Button
+        android:id="@+id/btnAddToRandomPosition"
+        android:layout_width="180dp"
+        android:layout_height="64dp"
+        android:textSize="12sp"
+        android:text="@string/add_to_a_random_position"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/btnRemoveFromRandomPosition"
+        app:layout_constraintTop_toBottomOf="@id/btnAddRandom" />
+
+    <Button
+        android:id="@+id/btnRemoveFromRandomPosition"
+        android:layout_width="180dp"
+        android:layout_height="64dp"
+        android:textSize="12sp"
+        android:text="@string/delete_from_a_random_position"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/btnAddToRandomPosition"
+        app:layout_constraintTop_toBottomOf="@id/btnRemoveRandom" />
+</androidx.constraintlayout.widget.ConstraintLayout>
