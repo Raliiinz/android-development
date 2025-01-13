@@ -25,6 +25,7 @@
     <string name="launched_from_notification">Приложение запущено из уведомления</string>
     <string name="permission_notifications_granted">Разрешение на уведомления предоставлено</string>
     <string name="permission_notifications_denied">Разрешение на уведомления отклонено</string>
+    <string name="color">цвет</string>
 
 
     <string-array name="importance_array">

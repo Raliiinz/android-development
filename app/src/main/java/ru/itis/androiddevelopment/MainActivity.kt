@@ -20,6 +20,7 @@ class MainActivity : BaseActivity(){
     var permissionsHandler: PermissionsHandler? = null
 
     override fun onCreate(savedInstanceState: Bundle?) {
+        setTheme(currentThemeResId)
         super.onCreate(savedInstanceState)
         viewBinding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(viewBinding?.root)
@@ -59,6 +60,11 @@ class MainActivity : BaseActivity(){
         }
     }
 
+    fun applyTheme(themeResId: Int) {
+        currentThemeResId = themeResId
+        recreate()
+    }
+
     private fun showToast(message: String) {
         Toast.makeText(this, message, Toast.LENGTH_SHORT).show()
     }
@@ -68,6 +74,10 @@ class MainActivity : BaseActivity(){
         notificationsHandler = null
         permissionsHandler = null
         super.onDestroy()
+    }
+
+    companion object {
+        var currentThemeResId: Int = R.style.Base_Theme_AndroidDevelopment
     }
 }
 

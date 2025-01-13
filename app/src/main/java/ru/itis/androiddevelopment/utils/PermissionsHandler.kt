@@ -5,8 +5,8 @@ import androidx.activity.result.contract.ActivityResultContracts
 import androidx.appcompat.app.AppCompatActivity
 
 class PermissionsHandler (
-    private val onSinglePermissionGranted: (() -> Unit)? = null,
-    private val onSinglePermissionDenied: (() -> Unit)? = null
+    private var onSinglePermissionGranted: (() -> Unit)? = null,
+    private var onSinglePermissionDenied: (() -> Unit)? = null
 ) {
 
     private var activity: AppCompatActivity? = null
@@ -29,8 +29,15 @@ class PermissionsHandler (
                 }
         }
     }
+    fun requestSinglePermission(
+        permission: String,
+        onGranted: (() -> Unit)? = null,
+        onDenied: (() -> Unit)? = null
+    ) {
+        // Обновляем колбэки для текущего запроса
+        onSinglePermissionGranted = onGranted
+        onSinglePermissionDenied = onDenied
 
-    fun requestSinglePermission(permission: String) {
         singlePermissionResult?.launch(permission)
     }
 }

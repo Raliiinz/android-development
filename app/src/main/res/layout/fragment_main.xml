@@ -63,38 +63,12 @@
                 android:contentDescription="@string/drop_down" />
         </LinearLayout>
 
-        <LinearLayout
-            android:id="@+id/colorContainer"
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/colorsRecyclerView"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"
             android:visibility="gone"
-            android:layout_marginVertical="8dp">
-
-            <ImageView
-                android:id="@+id/redColor"
-                android:layout_width="48dp"
-                android:layout_height="48dp"
-                android:layout_margin="8dp"
-                android:background="#FF0000"
-                android:contentDescription="@string/red_color" />
-
-            <ImageView
-                android:id="@+id/greenColor"
-                android:layout_width="48dp"
-                android:layout_height="48dp"
-                android:layout_margin="8dp"
-                android:background="#00FF00"
-                android:contentDescription="@string/green_color" />
-
-            <ImageView
-                android:id="@+id/yellowColor"
-                android:layout_width="48dp"
-                android:layout_height="48dp"
-                android:layout_margin="8dp"
-                android:background="#FFFF00"
-                android:contentDescription="@string/yellow_color" />
-        </LinearLayout>
+            android:layout_margin="8dp" />
 
     </LinearLayout>
 
