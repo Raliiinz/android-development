@@ -1,7 +1,19 @@
 <resources>
     <string name="app_name">AndroidDevelopment</string>
-    <string name="click_me">Click me</string>
-    <string name="enter_the_text">Enter the text:</string>
-    <string name="second_screen">You are on the second screen</string>
-    <string name="third_screen">You are on the third screen</string>
+
+    <string name="number_of_coroutines_label">Number of Coroutines</string>
+    <string name="launch_mode_label">Launch Mode:</string>
+    <string name="coroutine_behavior_label">Coroutine Behavior:</string>
+    <string name="thread_pool_label">Thread Pool:</string>
+    <string name="start_coroutines_button">Start Coroutines</string>
+    <string name="cancel_coroutines_button">Cancel Coroutines</string>
+    <string name="all_coroutines_completed_toast">All coroutines completed!</string>
+    <string name="error_toast">Exception: %1$s</string>
+    <string name="unknown_error">Unknown error</string>
+    <string name="coroutines_canceled_toast">%d coroutines were canceled</string>
+    <string name="no_coroutines_to_cancel_toast">No coroutines to cancel.</string>
+    <string name="notification_permission_title">Разрешение на уведомления</string>
+    <string name="notification_permission_message">Это приложение требует разрешение на уведомления. Пожалуйста, предоставьте его в настройках приложения.</string>
+    <string name="open_settings_button">Открыть настройки</string>
+    <string name="cancel_button">Отмена</string>
 </resources>
