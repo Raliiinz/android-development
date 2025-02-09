@@ -30,6 +30,13 @@ class WishAdapter(
     inner class WishViewHolder(private val binding: ItemWishBinding) :
         RecyclerView.ViewHolder(binding.root) {
 
+        init {
+            binding.root.setOnLongClickListener {
+                onDeleteClick(wish)
+                true
+            }
+        }
+
         fun bind(wish: WishEntity) {
             binding.textViewWishName.text = wish.wishName
             binding.textViewPrice.text = binding.root.context.getString(R.string.price, wish.price.toString())
@@ -39,11 +46,6 @@ class WishAdapter(
                 binding.imageViewWishPhoto.setImageBitmap(bitmap)
             } ?: run {
                 binding.imageViewWishPhoto.setImageResource(R.drawable.ic_insert_photo)
-            }
-
-            binding.root.setOnLongClickListener {
-                onDeleteClick(wish)
-                true
             }
 
         }
