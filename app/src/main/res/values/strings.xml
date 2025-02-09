@@ -4,4 +4,47 @@
     <string name="enter_the_text">Enter the text:</string>
     <string name="second_screen">You are on the second screen</string>
     <string name="third_screen">You are on the third screen</string>
+    <string name="main_page">Главная</string>
+    <string name="account_page">Личный кабинет</string>
+    <string name="enter_the_name_wish">Введите название желания</string>
+    <string name="permission_denied">Разрешение отказано</string>
+    <string name="fill_all_fields">Заполните все поля</string>
+    <string name="incorrect_email_or_password">Неверная почта или пароль</string>
+    <string name="user_already_registered">Пользователь с такой почтой уже зарегистрирован</string>
+    <string name="error_unknown_user">Ошибка: неизвестный пользователь</string>
+    <string name="alert_message">Вы уверены, что хотите удалить этот элемент?</string>
+    <string name="delete">Удалить</string>
+    <string name="alert_cancellation">Отмена</string>
+    <string name="error_email_not_found">Ошибка: Email пользователя не найден</string>
+    <string name="wishes_photo">Фото желания</string>
+    <string name="wishes_name">Название желания</string>
+    <string name="price_0">Цена: 0 ₽</string>
+    <string name="wishes_price">Цена</string>
+    <string name="choose_photo">Выбрать фото</string>
+    <string name="save">Сохранить</string>
+    <string name="wish_list">Wish List</string>
+    <string name="email">Email</string>
+    <string name="password">Пароль</string>
+    <string name="enter">Войти</string>
+    <string name="registration">Регистрация</string>
+    <string name="to_register">Зарегистрироваться</string>
+    <string name="choose_avatar">Выбрать аватар</string>
+    <string name="surname">Фамилия</string>
+    <string name="name">Имя</string>
+    <string name="logout">Выйти из профиля</string>
+    <string name="add_wish">add_wish</string>
+    <string name="save_changes">Сохранить изменения</string>
+    <string name="delete_account">Удалить аккаунт</string>
+    <string name="account_update">Профиль успешно обновлен!</string>
+    <string name="alert_title_delete">Удаление аккаунта</string>
+    <string name="alert_message_delete">Вы уверены, что хотите удалить аккаунт?</string>
+    <string name="filter">Фильтр</string>
+    <string name="price">%1$s ₽</string>
+    <string name="invalid_email">Введите корректный email</string>
+
+    <string-array name="filter_options">
+        <item>По умолчанию</item>
+        <item>Цена: По возрастанию</item>
+        <item>Цена: По убыванию</item>
+    </string-array>
 </resources>
